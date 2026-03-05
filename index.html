@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NaturalFit - Restaurante de comidas saudáveis com ingredientes frescos e naturais. Alimente sua vida com saúde!">
+    <meta name="theme-color" content="#2d8659">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>NaturalFit - Comidas Saudáveis Deliciosas</title>
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-area">
+                <h1 class="logo">🥗 NaturalFit</h1>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu" aria-label="Navegação principal">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#cardapio" class="nav-link">Cardápio</a>
+                <a href="#promocoes" class="nav-link">Promoções</a>
+                <a href="#beneficios" class="nav-link">Benefícios</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h2 class="hero-title">Alimente sua vida com saúde!</h2>
+                <p class="hero-subtitle">Pratos deliciosos feitos com ingredientes frescos e naturais, sem conservantes ou corantes artificiais.</p>
+                <button class="cta-button" aria-label="Explorar nosso cardápio">Explorar Cardápio</button>
+            </div>
+        </section>
+
+        <!-- Seção de Cardápio -->
+        <section class="cardapio" id="cardapio">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Pratos Especiais</h2>
+                <p class="section-subtitle">Cuidadosamente preparados para sua saúde e satisfação</p>
+            </div>
+
+            <div class="pratos-grid">
+                <article class="prato-card">
+                        <div class="prato-image">
+                            <img src="./src/img/arroz.jpg" alt="Arroz Recheado - prato saudável com arroz integral e vegetais">
+                    </div>
+                    <div class="prato-info">
+                        <h3>Arroz Recheado</h3>
+                        <p>Arroz integral com recheio nutritivo de vegetais frescos e proteína magra.</p>
+                        <span class="preco">R$ 28,90</span>
+                    </div>
+                </article>
+
+                <article class="prato-card">
+                    <div class="prato-image">
+                        <img src="./src/img/omelete.jpg" alt="Omelete - ovos frescos com vegetais e queijo branco">
+                    </div>
+                    <div class="prato-info">
+                        <h3>Omelete Gourmet</h3>
+                        <p>Ovos caipiras com vegetais selecionados, queijo branco e ervas naturais.</p>
+                        <span class="preco">R$ 24,90</span>
+                    </div>
+                </article>
+
+                <article class="prato-card">
+                    <div class="prato-image">
+                        <img src="./src/img/frango.jpeg" alt="Frango e Legumes - peito de frango grelhado com legumes variados">
+                    </div>
+                    <div class="prato-info">
+                        <h3>Frango e Legumes</h3>
+                        <p>Peito de frango grelhado com brócolis, cenoura e batata-doce assada.</p>
+                        <span class="preco">R$ 32,90</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de Destaque -->
+        <section class="destaque" id="destaque">
+            <article class="destaque-card">
+                <div class="destaque-texto">
+                    <h2>Frango Cremoso</h2>
+                    <p>Nossa especialidade! Frango suculento preparado em molho cremoso à base de iogurte grego, alho e ervas aromáticas. Acompanha brócolis al dente e quinoa.</p>
+                    <p>Comida saudável, feita com ingredientes frescos e naturais, sem adição de conservantes ou corantes artificiais. Ideal para quem busca uma alimentação equilibrada e nutritiva.</p>
+                    <button class="secondary-button" aria-label="Pedir Frango Cremoso">Pedir Agora</button>
+                </div>
+                <div class="destaque-imagem">
+                    <img src="./src/img/frango-cremoso.jpg" alt="Frango Cremoso servido em prato branco com decoração de ervas">
+                </div>
+            </article>
+        </section>
+
+        <!-- Seção de Promoções -->
+        <section class="promocoes" id="promocoes">
+            <div class="section-header">
+                <h2 class="section-title">Promoções Especiais</h2>
+                <p class="section-subtitle">Aproveite nossas ofertas imperdíveis</p>
+            </div>
+
+            <div class="promocoes-grid">
+                <article class="promocao-card">
+                    <div class="promocao-imagem">
+                        <img src="./src/img/salada-premium.jpg" alt="Salada Premium - mix de folhas verdes com frutas secas e castanhas">
+                    </div>
+                    <div class="promocao-conteudo">
+                        <h3>Salada Premium em Destaque</h3>
+                        <p>Uma explosão de sabor e saúde no seu prato: folhas verdes selecionadas, frutas secas, castanhas crocantes e tempero irresistível.</p>
+                        <div class="preco-promo">
+                            <span class="preco-original">R$ 35,90</span>
+                            <span class="preco-desconto">R$ 24,90</span>
+                        </div>
+                        <button class="secondary-button" aria-label="Adicionar Salada Premium ao carrinho">Aproveitar Promoção</button>
+                    </div>
+                </article>
+
+                <article class="catalogo-card">
+                    <div class="catalogo-imagem">
+                        <img src="./src/img/ovopao.jpg" alt="Café da Manhã Saudável - pão integral com ovos e acompanhamentos">
+                    </div>
+                    <div class="catalogo-conteudo">
+                        <h2>Nosso Catálogo Completo</h2>
+                        <p>Uma variedade completa de pratos saudáveis para todas as refeições do dia.</p>
+                        <button class="secondary-button" aria-label="Ver catálogo completo">Ver Catálogo</button>
+                    </div>
+                </article>
+
+                <article class="favoritos-card">
+                    <div class="favoritos-imagem">
+                        <img src="./src/img/sushi.jpeg" alt="Sushi Vegetariano - rolls com vegetais frescos e arroz integral">
+                    </div>
+                    <div class="favoritos-conteudo">
+                        <h2>Seus Favoritos</h2>
+                        <p>Acesse seus pratos preferidos e salve suas delícias para pedidos futuros.</p>
+                        <button class="secondary-button" aria-label="Acessar favoritos">Meus Favoritos</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios -->
+        <section class="beneficios" id="beneficios">
+            <div class="section-header">
+                <h2 class="section-title">Por Que Escolher NaturalFit?</h2>
+                <p class="section-subtitle">Qualidade e cuidado em cada refeição</p>
+            </div>
+
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">✓</div>
+                    <h3>Ingredientes Frescos</h3>
+                    <p>Utilizamos apenas ingredientes selecionados, naturais e frescos. Nada de conservantes ou corantes artificiais.</p>
+                </div>
+
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">✓</div>
+                    <h3>Nutricional Equilibrado</h3>
+                    <p>Todos os pratos são formulados por nutricionistas para garantir equilíbrio e valor nutricional ideal.</p>
+                </div>
+
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">✓</div>
+                    <h3>Sabor Garantido</h3>
+                    <p>Saúde e sabor não são excludentes! Nossos chefs preparam refeições saborosas e nutritivas.</p>
+                </div>
+
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">✓</div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Entrega em até 40 minutos na região metropolitana. Seu prato chega quentinho e fresco.</p>
+                </div>
+
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">✓</div>
+                    <h3>Opções Variadas</h3>
+                    <p>Vegetariano, vegano, sem glúten, low-carb... Temos opção para todos os estilos de vida.</p>
+                </div>
+
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">✓</div>
+                    <h3>Preço Justo</h3>
+                    <p>Qualidade premium com preço acessível. Promoções especiais e combos para economizar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato/Footer -->
+        <section class="cta-final">
+            <h2>Pronto para começar?</h2>
+            <p>Peça sua refeição saudável agora mesmo e comece uma nova jornada rumo à saúde!</p>
+            <button class="cta-button" aria-label="Fazer meu primeiro pedido">Fazer Pedido Agora</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>NaturalFit</h3>
+                <p>Restaurante de comidas saudáveis com ingredientes frescos e naturais.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Horário</h3>
+                <p>Segunda a Sexta: 11h - 21h</p>
+                <p>Sábado: 12h - 22h</p>
+                <p>Domingo: 12h - 20h</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><strong>Telefone:</strong> (11) 9999-9999</p>
+                <p><strong>Email:</strong> contato@naturalfit.com.br</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Visite nossa página no Instagram">Instagram</a>
+                    <a href="#" aria-label="Visite nossa página no Facebook">Facebook</a>
+                    <a href="#" aria-label="Visite nosso canal no YouTube">YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 NaturalFit. Todos os direitos reservados.</p>
+            <p><a href="#" aria-label="Ler Política de Privacidade">Política de Privacidade</a> | <a href="#" aria-label="Ler Termos de Uso">Termos de Uso</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
